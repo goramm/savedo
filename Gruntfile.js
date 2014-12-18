@@ -164,7 +164,7 @@ module.exports = function (grunt) {
                         '<%= yeoman.app %>/bower_components/jquery/dist/jquery.js',
                         '<%= yeoman.app %>/bower_components/underscore/underscore.js',
                         '<%= yeoman.app %>/bower_components/backbone/backbone.js',
-                        '.tmp/scripts/templates.js'
+                        //'.tmp/scripts/templates.js'
                     ]
                 }
             }
@@ -374,7 +374,7 @@ module.exports = function (grunt) {
         'compass:dist',
         'useminPrepare',
         'requirejs',
-        //'imagemin',
+        'imagemin',
         'htmlmin',
         'concat',
         'cssmin',
