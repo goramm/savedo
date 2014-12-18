@@ -1,0 +1,70 @@
+.table{
+  color: $gray;
+  thead > tr > th{
+    background-color: $lightBlue;
+    border-right: 1px solid $white;
+    border-bottom: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  th.payee{
+    width: 284px;
+  }
+  th.iban{
+    width: 280px;
+  }
+
+  tbody > tr > td{
+    border-top: 0;
+    border-bottom: 1px solid $lightBlue;
+    vertical-align: middle;
+    padding: 30px 0 0;
+  }
+
+  td.image{
+    width: 98px;
+    border-bottom: 0;
+  }
+
+  td.center{
+    text-align: center;
+  }
+
+  div.name{
+    margin-bottom: 6px;
+  }
+
+  div.amount{
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    float: left;
+    background: url("../images/img.png") no-repeat 0 -153px;
+  }
+
+  .img-1{
+    background-position: 0 -153px;
+  }
+  .img-2{
+    background-position: 0 -233px;
+  }
+  .img-3{
+    background-position: 0 -313px;
+  }
+  .img-4{
+    background-position: -80px -153px;
+  }
+  .img-5{
+    background-position: -80px -233px;
+  }
+  .img-6{
+    background-position: -80px -313px;
+  }
+}

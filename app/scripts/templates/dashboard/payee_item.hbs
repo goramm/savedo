@@ -1,0 +1,17 @@
+<div class="item {{this.view.className}}">
+  <div class="inner">
+    <div class="img {{model.image}}">
+      {{#gt trxNumber 0}}
+        <div class="circle">{{trxNumber}}</div>
+      {{/gt}}
+    </div>
+    <div class="text">
+      <p class="name"><span class="lbl">Name:</span>{{model.name}}</p>
+      <p class="bank"><span class="lbl">Bank:</span>{{model.bank}}</p>
+      <p class="iban"><span class="lbl">IBAN:</span>{{model.iban}}</p>
+    </div>
+  </div>
+  <a href="#" class="action_edit"><i class="ico"></i></a>
+</div>
+
+

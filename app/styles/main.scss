@@ -1,0 +1,264 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'vars';
+@import 'sass-bootstrap/lib/bootstrap';
+@import 'datepicker';
+@import 'dashboard';
+@import 'transactions';
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  padding-top: 8px;
+  padding-bottom: 60px;
+  font-size: 16px;
+}
+
+.container{
+  max-width: 960px;
+  padding: 0;
+}
+
+.header {
+  border-bottom: 1px solid $lightBlue;
+  margin-bottom: 60px;
+  .container{
+    position: relative;
+    height: 73px;
+  }
+  .nav{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 24px;
+    li{
+      float: left;
+      margin-left: 40px;
+      &.active{
+        border-bottom: 3px solid $orange;
+        a{
+          color: $orange;
+        }
+      }
+      a{
+        color: $gray;
+        padding: 10px 2px 2px;
+      }
+      a:hover, a:focus{
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.btn{
+  border-radius: 0;
+  padding: 6px 40px;
+  font-size: 18px;
+}
+
+.btn:active, .btn.active{
+  box-shadow: none;
+}
+
+.btn-default {
+  @include button-variant($white, $orange, transparent);
+}
+.btn-none {
+  @include button-variant($gray, transparent, transparent);
+}
+
+.input-group-addon{
+  background: $white;
+  border-radius: 0;
+  border-color: $gray;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo {
+  display: block;
+  width: 202px;
+  height: 63px;
+  background: url("../images/img.png") no-repeat top left;
+  text-indent: -9999em;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ .textbox{
+  padding: 8px 10px;
+  border: 1px solid $gray;
+  color: $gray;
+  outline: 0;
+}
+
+.modal-backdrop{
+  background-color: rgba(255,255,255,0.7);
+}
+
+.form-row.error input[type="text"]{
+  border-color: $errorBorder;
+}
+
+div.global_error, tr.global_error{display: none;}
+.global_error{
+  padding: 10px 0;
+  text-align: left;
+  color: $orange;
+  margin-top: -20px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (max-width: 768px) {
+  body{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 14px;
+  }
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 0;
+
+    .container{
+      height: 53px;
+    }
+    .nav{
+      position: relative;
+      line-height: 38px;
+      font-size: 20px;
+      float: none !important;
+      text-align: center;
+      li{
+        margin: 0;
+        width: 50%;
+      }
+    }
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .col-left{
+    padding: 0;
+  }
+
+  .box{
+    margin-bottom: 0;
+    padding: 10px;
+    h3{
+      font-size: 18px;
+    }
+    .date{
+      display: none;
+    }
+    p.amount{
+      text-align: center;
+      font-size: 60px;
+    }
+    p .lbl{
+      margin-right: 15px;
+    }
+    .img{
+      margin-right: 10px;
+    }
+  }
+
+  .latest_transaction{
+    display: none;
+  }
+
+  .quick_pay{
+    .panel, .panel-body{
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .panel-body{
+      .item{
+        width: 100%;
+      }
+      .img{
+        margin-left: 0;
+        margin-right: 15px;
+      }
+    }
+
+    .panel-footer{
+      padding: 10px 0;
+    }
+  }
+
+  .pay-form{
+    margin-right: 30px;
+    label{
+      font-size: 14px;
+    }
+    .form-row{
+      float: none;
+      width: auto;
+      margin-bottom: 20px;
+    }
+    .name{
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+    .textbox, .btn{
+      font-size: 20px;
+    }
+    #amount, .textbox{
+      width: 100%;
+    }
+  }
+
+  .table{
+    th, td.iban, td.bank{
+      display: none;
+    }
+    td.image{
+      padding-left: 10px;
+      padding-right: 20px;
+    }
+  }
+
+  .editable-parent{
+    .editable-box{
+      width: 100%;
+      top: 0;
+      border: none;
+      margin: 0;
+    }
+
+    .img{
+      width: auto;
+      height: 220px;
+    }
+
+    .textbox{
+      width: 100%;
+    }
+
+    .pull-left, .pull-right{
+      float: none !important;
+    }
+  }
+}

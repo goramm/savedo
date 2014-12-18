@@ -1,0 +1,293 @@
+.box{
+  background-color: $lightBlue;
+  padding: 40px 20px 20px 30px;
+  margin-bottom: 20px;
+  color: $gray;
+  .col-right{
+    padding-right: 0;
+    text-align: right;
+  }
+  .img{
+    width: 82px;
+    height: 90px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+  p{
+    margin-bottom: 2px;
+    &.amount{
+      font-size: 74px;
+      font-weight: bold;
+      .decimal{
+        font-size: 24px;
+      }
+    }
+    .lbl{
+      width: 42px;
+      margin-right: 30px;
+      display: inline-block;
+    }
+  }
+
+}
+
+.balance{
+  .img{
+    background: url("../images/img.png") no-repeat 0 -63px;
+  }
+}
+
+.latest_transaction{
+  h4{
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .img{
+    background: url("../images/img.png") no-repeat -82px -63px;
+  }
+}
+
+.quick_pay{
+  .panel{ box-shadow: none; color: $gray; }
+  .panel-heading{
+    background-color: $orange;
+    color: $white;
+    font-size: 20px;
+    border-radius: 0;
+    padding: 10px 25px;
+    .new-payee{
+      font-size: 16px;
+      line-height: 28px;
+      color: white;
+      vertical-align: top;
+      width: 160px;
+      .ico{
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: url("../images/img.png") no-repeat right -68px;
+        float: left;
+        margin-right: 10px;
+        margin-top: -2px;
+      }
+    }
+  }
+
+  .panel-body{
+    border: 1px solid $lightGray;
+    border-radius: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 410px;
+    padding: 20px 0;
+
+    .action_edit{
+      display: none;
+      height: 100%;
+      width: 50px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(242, 101, 48, 0.6);
+      .ico{
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: url("../images/img.png") no-repeat right -108px;
+        margin: 35px auto 0;
+      }
+    }
+
+    .item{
+      float: left;
+      width: 50%;
+      margin-bottom: 10px;
+      position: relative;
+      cursor: pointer;
+      &:hover, &.active{
+        background-color: $lightBlue;
+        .action_edit{
+          display: block;
+        }
+      }
+      .inner{
+        padding: 15px 0 15px 15px;
+      }
+    }
+
+    .text{
+      margin-top: 4px;
+    }
+
+    p{
+      margin-bottom: 4px;
+    }
+
+    .lbl{
+      display: inline-block;
+      width: 50px;
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+
+    .img{
+      position: relative;
+      width: 80px;
+      height: 80px;
+      float: left;
+      margin-right: 30px;
+      margin-left: 15px;
+      background: url("../images/img.png") no-repeat 0 -153px;
+      .circle{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: $orange;
+        border-radius: 50%;
+        border: 3px solid $white;
+        width: 34px;
+        height: 34px;
+        line-height: 28px;
+        text-align: center;
+        color: $white;
+        font-weight: bold;
+      }
+    }
+
+    .img-1{
+      background-position: 0 -153px;
+    }
+    .img-2{
+      background-position: 0 -233px;
+    }
+    .img-3{
+      background-position: 0 -313px;
+    }
+    .img-4{
+      background-position: -80px -153px;
+    }
+    .img-5{
+      background-position: -80px -233px;
+    }
+    .img-6{
+      background-position: -80px -313px;
+    }
+  }
+
+  .panel-footer{
+    background-color: $lightGray;
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.editable-parent{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:0;
+  .editable-box{
+    position: relative;
+    z-index: 1031;
+    width: 960px;
+    margin: 30px auto;
+    top: 80px;
+    border: 1px solid $modalBorder;
+  }
+  .editable-heading{
+    background-color: $orange;
+    padding: 10px 25px;
+    color: $white;
+    font-size: 20px;
+  }
+  .editable-body{
+    padding: 20px;
+    background-color: $white;
+  }
+
+  .form-row{
+    margin-bottom: 40px;
+  }
+
+  label{
+    display: block;
+    font-weight: normal;
+    color: $gray;
+    text-transform: uppercase;
+  }
+
+  .textbox{
+    width: 530px;
+  }
+
+  .editable-buttons{
+    text-align: right;
+  }
+
+  .img{
+    width: 360px;
+    background: url("../images/addimg.png") no-repeat center center;
+    height: 280px;
+  }
+
+}
+
+.pay-form{
+  margin-left: 30px;
+  .form-row{
+    float: left;
+    width: 220px;
+  }
+  .form-row-3{
+    width: 200px;
+  }
+  label{
+    display: block;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  .textbox{
+    font-size: 24px;
+    width: 150px;
+    padding: 2px 10px;
+  }
+  #amount{
+    width: 127px;
+    text-align: right;
+  }
+  .name{
+    line-height: 40px;
+    font-size: 24px;
+  }
+  .buttons{
+    float: right;
+    margin-top: 27px;
+  }
+  .btn{
+    padding: 2px 20px;
+    font-size: 24px;
+  }
+
+  .form-row.error{
+    .input-group-addon{
+      border-color: $errorBorder;
+    }
+  }
+
+  .global_error{
+    display: block;
+    margin-top: 20px;
+    clear: both;
+    text-align: right;
+  }
+}

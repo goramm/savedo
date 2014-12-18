@@ -1,0 +1,14 @@
+<div class="row box">
+  <div class="col-xs-12 col-sm-6 col-left">
+    <div class="img"></div>
+    <div class="text">
+      <h3>Current account balance</h3>
+      <p class="bank"><span class="lbl">BANK</span>{{model.bank}}</p>
+      <p class="iban"><span class="lbl">IBAN</span>{{model.iban}}</p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-6 col-right">
+    <p class="date">Updated: <strong>{{date model.updated}}</strong></p>
+    <p class="amount">{{currency model.amount}}</small></p>
+  </div>
+</div>
