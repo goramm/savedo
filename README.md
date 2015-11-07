@@ -6,7 +6,7 @@ Instructions
 3. npm install
 4. bower install
 5. grunt serve
-6. go to http://localhost:9000 or visit http://goranmilovanovic.me/savedo/
+6. go to http://localhost:9000
 
 Build
 =====
